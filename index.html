@@ -149,6 +149,9 @@
     <select id="filter-country">
       <option value="All">All Countries</option>
     </select>
+    <select id="filter-producer">
+      <option value="All">All Producers</option>
+    </select>
     <select id="filter-varietal">
       <option value="All">All Master Varietals</option>
     </select>
@@ -172,22 +175,27 @@
         renderList();
         document.getElementById('search').addEventListener('input', renderList);
         document.getElementById('filter-country').addEventListener('change', renderList);
+        document.getElementById('filter-producer').addEventListener('change', renderList);
         document.getElementById('filter-varietal').addEventListener('change', renderList);
         document.getElementById('reset').addEventListener('click', () => {
           document.getElementById('search').value = '';
           document.getElementById('filter-country').value = 'All';
+          document.getElementById('filter-producer').value = 'All';
           document.getElementById('filter-varietal').value = 'All';
           renderList();
         });
       })
       .catch(console.error);
 
-    // Build Country & MasterVarietal dropdowns
+    // Build Country, Producer & MasterVarietal dropdowns
     function buildFilters() {
       const countries = uniqSorted(wines.map(w => w.Country));
+      const producers = uniqSorted(wines.map(w => w.Producer));
       const varietals = uniqSorted(wines.map(w => w.MasterVarietal));
       const cSel = document.getElementById('filter-country');
       countries.forEach(c => cSel.add(new Option(c, c)));
+      const pSel = document.getElementById('filter-producer');
+      producers.forEach(p => pSel.add(new Option(p, p)));
       const vSel = document.getElementById('filter-varietal');
       varietals.forEach(v => vSel.add(new Option(v, v)));
     }
@@ -212,6 +220,7 @@
       container.innerHTML = '';
       const term = document.getElementById('search').value.toLowerCase();
       const countryFilter = document.getElementById('filter-country').value;
+      const producerFilter = document.getElementById('filter-producer').value;
       const varietalFilter = document.getElementById('filter-varietal').value;
 
       // Apply filters
@@ -219,6 +228,7 @@
         const entry = `${w.Wine}, ${w.Region}, ${w.Appellation}, ${w.Vintage}`.toLowerCase();
         return (!term || entry.includes(term))
             && (countryFilter === 'All' || w.Country === countryFilter)
+            && (producerFilter === 'All' || w.Producer === producerFilter)
             && (varietalFilter === 'All' || w.MasterVarietal === varietalFilter);
       });
 
