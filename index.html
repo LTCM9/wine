@@ -8,15 +8,22 @@
     /* GLOBAL & TYPOGRAPHY */
     * { box-sizing: border-box; }
     body {
-      margin: 0; padding: 0;
+      margin: 0;
+      padding: 0;
       font-family: Georgia, serif;
       color: #333;
       line-height: 1.4;
       display: flex;
       min-height: 100vh;
+      background: #fafafa;
     }
-    a { color: #000080; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    a {
+      color: #000080;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
 
     /* SIDEBAR (Jump-To Nav + Filters) */
     #sidebar {
@@ -24,7 +31,9 @@
       padding: 1rem;
       background: #f0f4fa;
       border-right: 1px solid #777;
-      position: sticky; top: 0; align-self: flex-start;
+      position: sticky;
+      top: 0;
+      align-self: flex-start;
       height: 100vh;
       overflow-y: auto;
     }
@@ -38,14 +47,14 @@
     #sidebar select {
       width: 100%;
       margin-bottom: 1rem;
-      padding: 0.5rem;
+      padding: 0.6rem 0.8rem;
       font-size: 0.9rem;
-      color: #777;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      background: #fff;
-      box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
-      transition: border-color 0.2s, box-shadow 0.2s;
+      color: #333;
+      border: 1px solid #bbb;
+      border-radius: 6px;
+      background: linear-gradient(to bottom, #fff, #ececec);
+      box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);
+      transition: border-color 0.3s, box-shadow 0.3s;
     }
     #sidebar input::placeholder {
       color: #777;
@@ -54,7 +63,8 @@
     #sidebar select:focus {
       border-color: #000080;
       outline: none;
-      box-shadow: 0 0 5px rgba(0,0,128,0.3);
+      box-shadow: 0 0 6px rgba(0,0,128,0.4);
+      background: #fff;
     }
     /* Fancy reset button */
     #sidebar button {
@@ -63,25 +73,27 @@
       padding: 0.6rem;
       font-size: 0.9rem;
       color: #fff;
-      background: #000080;
+      background: linear-gradient(to bottom, #000080, #3333aa);
       border: none;
-      border-radius: 4px;
+      border-radius: 6px;
       cursor: pointer;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-      transition: background 0.2s, box-shadow 0.2s;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+      transition: background 0.3s, box-shadow 0.3s;
     }
     #sidebar button:hover {
-      background: #3333aa;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      background: linear-gradient(to bottom, #3333aa, #5555cc);
+      box-shadow: 0 5px 8px rgba(0,0,0,0.3);
     }
 
     /* MAIN CONTENT */
     #main {
-      flex: 1; padding: 2rem;
+      flex: 1;
+      padding: 2rem;
     }
     h1 {
       margin-top: 0;
       color: #777;
+      font-size: 2rem;
     }
     h2 {
       font-size: 1.8rem;
@@ -89,8 +101,12 @@
       border-bottom: 2px solid #777;
       padding-bottom: 0.3rem;
     }
-    section[id^="type-Red"] h2 { color: red; }
-    section[id^="type-White"] h2 { color: gold; }
+    section[id^="type-Red"] h2 {
+      color: red;
+    }
+    section[id^="type-White"] h2 {
+      color: gold;
+    }
     h3 {
       font-size: 1.4rem;
       margin-top: 1.5rem;
@@ -112,7 +128,9 @@
 
     /* RESPONSIVE: collapse sidebar on narrow */
     @media (max-width: 768px) {
-      body { flex-direction: column; }
+      body {
+        flex-direction: column;
+      }
       #sidebar {
         position: relative;
         height: auto;
@@ -132,7 +150,7 @@
       <option value="All">All Countries</option>
     </select>
     <select id="filter-varietal">
-      <option value="All">All Varietals</option>
+      <option value="All">All Master Varietals</option>
     </select>
     <button id="reset">Reset Filters</button>
   </aside>
@@ -144,6 +162,7 @@
     let wines = [];
     const uniqSorted = arr => [...new Set(arr)].sort();
 
+    // Load data
     fetch('wine-data.json')
       .then(r => r.json())
       .then(data => {
@@ -163,15 +182,17 @@
       })
       .catch(console.error);
 
+    // Build Country & MasterVarietal dropdowns
     function buildFilters() {
       const countries = uniqSorted(wines.map(w => w.Country));
-      const varietals = uniqSorted(wines.map(w => w.Varietal));
+      const varietals = uniqSorted(wines.map(w => w.MasterVarietal));
       const cSel = document.getElementById('filter-country');
       countries.forEach(c => cSel.add(new Option(c, c)));
       const vSel = document.getElementById('filter-varietal');
       varietals.forEach(v => vSel.add(new Option(v, v)));
     }
 
+    // Jump-To navigation for Types
     function buildNav() {
       const nav = document.getElementById('nav-list');
       uniqSorted(wines.map(w => w.Type)).forEach(type => {
@@ -185,48 +206,65 @@
       });
     }
 
+    // Render grouped list (Type → Country → MasterVarietal)
     function renderList() {
       const container = document.getElementById('wine-list');
       container.innerHTML = '';
       const term = document.getElementById('search').value.toLowerCase();
       const countryFilter = document.getElementById('filter-country').value;
       const varietalFilter = document.getElementById('filter-varietal').value;
+
+      // Apply filters
       const filtered = wines.filter(w => {
-        const entry = `${w.Wine}, ${w.Appellation}, ${w.Vintage}`.toLowerCase();
+        const entry = `${w.Wine}, ${w.Region}, ${w.Appellation}, ${w.Vintage}`.toLowerCase();
         return (!term || entry.includes(term))
             && (countryFilter === 'All' || w.Country === countryFilter)
-            && (varietalFilter === 'All' || w.Varietal === varietalFilter);
+            && (varietalFilter === 'All' || w.MasterVarietal === varietalFilter);
       });
+
+      // Group by Type → Country → MasterVarietal
       const grouped = {};
       filtered.forEach(w => {
         grouped[w.Type] = grouped[w.Type] || {};
         grouped[w.Type][w.Country] = grouped[w.Type][w.Country] || {};
-        grouped[w.Type][w.Country][w.Varietal] = grouped[w.Type][w.Country][w.Varietal] || [];
-        grouped[w.Type][w.Country][w.Varietal].push(w);
+        grouped[w.Type][w.Country][w.MasterVarietal] = grouped[w.Type][w.Country][w.MasterVarietal] || [];
+        grouped[w.Type][w.Country][w.MasterVarietal].push(w);
       });
+
+      // Render
       Object.keys(grouped).forEach(type => {
         const sec = document.createElement('section');
         sec.id = `type-${type.replace(/\s+/g,'-')}`;
         const h2 = document.createElement('h2');
         h2.textContent = type;
         sec.appendChild(h2);
+
         Object.keys(grouped[type]).forEach(country => {
           const h3 = document.createElement('h3');
           h3.textContent = country;
           sec.appendChild(h3);
+
           Object.keys(grouped[type][country]).forEach(varietal => {
             const h4 = document.createElement('h4');
             h4.textContent = varietal;
             sec.appendChild(h4);
-            const ul = document.createElement('ul'); ul.className = 'wine-list';
+
+            const ul = document.createElement('ul');
+            ul.className = 'wine-list';
             grouped[type][country][varietal].forEach(w => {
               const li = document.createElement('li');
-              li.textContent = `${w.Wine}, ${w.Appellation}, ${w.Vintage}`;
+              const link = document.createElement('a');
+              link.href = `https://www.cellartracker.com/wine.asp?iWine=${w.iWine}`;
+              link.textContent = w.Wine;
+              link.target = '_blank';
+              li.appendChild(link);
+              li.append(`, ${w.Region}, ${w.Appellation}, ${w.Vintage}`);
               ul.appendChild(li);
             });
             sec.appendChild(ul);
           });
         });
+
         container.appendChild(sec);
       });
     }
