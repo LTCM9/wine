@@ -3,8 +3,8 @@ name: Convert Excel to JSON
 on:
 push:
 paths:
-\- "My Cellar.csv"
-\- "watch\_and\_convert.py"
+- "My Cellar.csv"
+- "watch_and_convert.py"
 
 jobs:
 convert:
