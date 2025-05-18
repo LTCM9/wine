@@ -1,0 +1,38 @@
+name: Convert Excel to JSON
+
+on:
+push:
+paths:
+- "My Cellar.csv"
+- "watch_and_convert.py"
+
+jobs:
+convert:
+runs-on: ubuntu-latest
+steps:
+\- name: Checkout repository
+uses: actions/checkout\@v3
+with:
+persist-credentials: true
+fetch-depth: 0
+
+  - name: Set up Python
+    uses: actions/setup-python@v4
+    with:
+      python-version: '3.x'
+
+  - name: Install dependencies
+    run: |
+      pip install pandas watchdog
+
+  - name: Convert CSV to JSON
+    run: |
+      python watch_and_convert.py "My Cellar.csv" wine-data.json
+
+  - name: Commit updated JSON
+    uses: EndBug/add-and-commit@v9
+    with:
+      author_name: 'GitHub Actions'
+      author_email: 'actions@github.com'
+      message: 'Auto-convert Excel to JSON [skip ci]'
+      add: 'wine-data.json'
