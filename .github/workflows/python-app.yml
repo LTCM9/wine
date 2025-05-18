@@ -24,7 +24,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install pandas==1.5.3 watchdog==2.3.0
+          # Pin compatible versions of Pandas and NumPy
+          pip install pandas==1.5.3 numpy==1.24.3 watchdog==2.3.0
 
       - name: Convert CSV to JSON
         run: |
