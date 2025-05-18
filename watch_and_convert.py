@@ -30,13 +30,20 @@ class ExcelEventHandler(FileSystemEventHandler):
             print(f"Detected change in '{self.input_path}' at {time.ctime(mtime)}, regenerating JSON...")
             # Load and map Type
             df = pd.read_csv(self.input_path, encoding='latin-1')
-            df['Type'] = df['Type'].replace({'Red - Fortified': 'Red - Sweet/Dessert'})
+            if 'Type' in df.columns:
+                df['Type'] = df['Type'].replace({'Red - Fortified': 'Red - Sweet/Dessert'})
+            else:
+                print("Warning: 'Type' column not found in input file.")
             # Select desired columns
             cols = ['Producer', 'Type', 'Country', 'MasterVarietal', 'Wine', 'Region', 'Appellation', 'Vintage', 'iWine']
-            df_selected = df[cols]
+            missing_cols = [col for col in cols if col not in df.columns]
+            if missing_cols:
+                print(f"Warning: Missing columns in input file: {missing_cols}")
+            df_selected = df[[col for col in cols if col in df.columns]]
             # Write JSON
-            df_selected.to_json(self.output_path, orient='records', indent=2)
-            print(f"Successfully wrote {len(df_selected)} records to '{self.output_path}'")
+            output_json_path = os.path.abspath(self.output_path)
+            df_selected.to_json(output_json_path, orient='records', indent=2)
+            print(f"Successfully wrote {len(df_selected)} records to '{output_json_path}'")
         except Exception as e:
             print(f"Error processing '{self.input_path}': {e}")
 
