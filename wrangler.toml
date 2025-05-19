@@ -1,9 +1,0 @@
-name = "wiles-family-wine-list"
-compatibility_date = "2025-05-16"
-
-# Tell Wrangler you’re publishing a 'workers-site'
-type = "assets"
-
-[site]
-bucket = "./"          # where your static files live
-entry-point = "."      # no Worker code, just static
