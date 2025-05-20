@@ -9,7 +9,7 @@ import pandas as pd
 
 def convert(input_path, output_path):
     # → Use utf-8-sig for UTF-8 with/without BOM; switch to cp1252 if needed
-    df = pd.read_csv(input_path, encoding='cp1252')
+    df = pd.read_csv(input_path, encoding='utf-8-sig')
     if 'Type' in df.columns:
         df['Type'] = df['Type'].replace({'Red - Fortified': 'Red - Sweet/Dessert'})
     cols = ['Producer', 'Type', 'Country', 'MasterVarietal',
