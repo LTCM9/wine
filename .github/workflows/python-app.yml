@@ -29,7 +29,7 @@ jobs:
 
       - name: Convert CSV to JSON
         run: |
-          python watch_and_convert.py "My Cellar.csv" wine-data.json
+          python convert_once.py "My Cellar.csv" wine-data.json
 
       - name: Commit updated JSON
         uses: EndBug/add-and-commit@v9
