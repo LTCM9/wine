@@ -1,5 +1,5 @@
 iWine,Type,Vintage,Wine,Producer,MasterVarietal,Country,Region,Appellation
-5074134,Red,2023,Bedrock Wine Co. Bedrock Vineyard Heritage,Bedrock Wine Co.,Zinfandel,USA,California,Sonoma ValleyTest
+5074134,Red,2023,Bedrock Wine Co. Bedrock Vineyard HeritageTest,Bedrock Wine Co.,Zinfandel,USA,California,Sonoma Valley
 5166469,Red,2023,Bedrock Wine Co. Cabernet Sauvignon Montecillo Vineyard,Bedrock Wine Co.,Cabernet Sauvignon,USA,California,Moon Mountain District
 5268947,Red,2023,Bedrock Wine Co. Cabernet Sauvignon Sonoma County,Bedrock Wine Co.,Cabernet Sauvignon,USA,California,Sonoma County
 5166523,Red,2023,Bedrock Wine Co. Carignan Bedrock Vineyard,Bedrock Wine Co.,Carignan,USA,California,Sonoma Valley
@@ -18,9 +18,9 @@ iWine,Type,Vintage,Wine,Producer,MasterVarietal,Country,Region,Appellation
 5167885,Red,2023,Bedrock Wine Co. Zinfandel Evangelho Vineyard,Bedrock Wine Co.,Zinfandel,USA,California,Contra Costa County
 5074155,Red,2023,Bedrock Wine Co. Zinfandel Katushas' Vineyard,Bedrock Wine Co.,Zinfandel,USA,California,Lodi Mokelumne River
 5166478,Red,2023,Bedrock Wine Co. Zinfandel Sky Vineyard,Bedrock Wine Co.,Zinfandel,USA,California,Mt. Veeder
-4894960,White - Sweet/Dessert,2019,Chï¿½teau Bï¿½lingard Monbazillac,Chï¿½teau Bï¿½lingard,Sï¿½millon-Sauvignon Blanc Blend,France,Southwest France,Monbazillac
+4894960,White - Sweet/Dessert,2019,Château Bélingard Monbazillac,Château Bélingard,Sémillon-Sauvignon Blanc Blend,France,Southwest France,Monbazillac
 5208304,Red,2022,Benmar Pinot Noir Springbok,Benmar,Pinot Noir,USA,Oregon,Yamhill-Carlton
-3735494,White - Sweet/Dessert,2019,Chï¿½teau Cantegril Sauternes,Chï¿½teau Cantegril,Sï¿½millon-Sauvignon Blanc Blend,France,Bordeaux,Sauternes
+3735494,White - Sweet/Dessert,2019,Château Cantegril Sauternes,Château Cantegril,Sémillon-Sauvignon Blanc Blend,France,Bordeaux,Sauternes
 5068319,Red,2022,Carlisle Syrah Papa's Block,Carlisle,Syrah,USA,California,Russian River Valley
 5068322,Red,2022,Carlisle Syrah Sonoma County,Carlisle,Syrah,USA,California,Sonoma County
 5068328,Red,2022,Carlisle Zinfandel Carlisle Vineyard,Carlisle,Zinfandel,USA,California,Russian River Valley
@@ -30,20 +30,20 @@ iWine,Type,Vintage,Wine,Producer,MasterVarietal,Country,Region,Appellation
 2592735,Red,2014,Conn Creek Cabernet Sauvignon Anthology,Conn Creek,Cabernet Sauvignon,USA,California,Napa Valley
 5055999,Red,2019,Conn Creek Petit Verdot,Conn Creek,Petit Verdot,USA,California,Napa Valley
 2999389,Red - Fortified,2016,Croft Porto Vintage,Croft,Port Blend,Portugal,Douro,Porto
-4641573,White - Sweet/Dessert,2022,Chï¿½teau Doisy-Daï¿½ne,Chï¿½teau Doisy-Daï¿½ne,Sï¿½millon-Sauvignon Blanc Blend,France,Bordeaux,Barsac
-3662523,White - Sweet/Dessert,2019,Chï¿½teau Doisy-Vï¿½drines,Chï¿½teau Doisy-Vï¿½drines,Sï¿½millon-Sauvignon Blanc Blend,France,Bordeaux,Sauternes
+4641573,White - Sweet/Dessert,2022,Château Doisy-Daëne,Château Doisy-Daëne,Sémillon-Sauvignon Blanc Blend,France,Bordeaux,Barsac
+3662523,White - Sweet/Dessert,2019,Château Doisy-Védrines,Château Doisy-Védrines,Sémillon-Sauvignon Blanc Blend,France,Bordeaux,Sauternes
 2999578,Red - Fortified,2016,Dow Porto Vintage,Dow,Port Blend,Portugal,Douro,Porto
 3292346,Red - Fortified,2017,Fonseca Porto Vintage,Fonseca,Port Blend,Portugal,Douro,Porto
 4087313,Red,2019,Groth Cabernet Sauvignon,Groth,Cabernet Sauvignon,USA,California,Oakville
 18574,Red,1985,Groth Cabernet Sauvignon,Groth,Cabernet Sauvignon,USA,California,Oakville
-1137951,White - Sweet/Dessert,2010,Chï¿½teau Guiraud,Chï¿½teau Guiraud,Sï¿½millon-Sauvignon Blanc Blend,France,Bordeaux,Sauternes
+1137951,White - Sweet/Dessert,2010,Château Guiraud,Château Guiraud,Sémillon-Sauvignon Blanc Blend,France,Bordeaux,Sauternes
 4780871,Red,2019,Heitz Cellar Cabernet Sauvignon,Heitz Cellar,Cabernet Sauvignon,USA,California,Napa Valley
 3976651,Red,2018,Heitz Cellar Cabernet Sauvignon,Heitz Cellar,Cabernet Sauvignon,USA,California,Napa Valley
-4701582,Red,2022,Domaine L'Abbï¿½ Dï¿½ne Chï¿½teauneuf-du-Pape,Domaine L'Abbï¿½ Dï¿½ne,Red Rhone Blend,France,Rhï¿½ne,Chï¿½teauneuf-du-Pape
-3037,White - Sweet/Dessert,2001,Chï¿½teau Lafaurie-Peyraguey,Chï¿½teau Lafaurie-Peyraguey,Sï¿½millon-Sauvignon Blanc Blend,France,Bordeaux,Sauternes
+4701582,Red,2022,Domaine L'Abbé Dîne Châteauneuf-du-Pape,Domaine L'Abbé Dîne,Red Rhone Blend,France,Rhône,Châteauneuf-du-Pape
+3037,White - Sweet/Dessert,2001,Château Lafaurie-Peyraguey,Château Lafaurie-Peyraguey,Sémillon-Sauvignon Blanc Blend,France,Bordeaux,Sauternes
 4227860,White - Sweet/Dessert,2019,Luna Vineyards Pinot Grigio Late Harvest,Luna Vineyards,Pinot Gris,USA,California,Napa Valley
-2956,Red,1985,Chï¿½teau Lynch-Bages,Chï¿½teau Lynch-Bages,Red Bordeaux Blend,France,Bordeaux,Pauillac
-3997479,White - Sweet/Dessert,2019,Chï¿½teau Miselle,Chï¿½teau Miselle,Sï¿½millon-Sauvignon Blanc Blend,France,Bordeaux,Sauternes
+2956,Red,1985,Château Lynch-Bages,Château Lynch-Bages,Red Bordeaux Blend,France,Bordeaux,Pauillac
+3997479,White - Sweet/Dessert,2019,Château Miselle,Château Miselle,Sémillon-Sauvignon Blanc Blend,France,Bordeaux,Sauternes
 5158670,Red,2022,Norris Estate Pinot Noir Landscape,Norris Estate,Pinot Noir,USA,Oregon,Ribbon Ridge
 4771092,Red,2020,Our Wines Pinot Noir,Our Wines,Pinot Noir,USA,Oregon,Oregon
 4740514,Red,2017,Our Wines Pinot Noir,Our Wines,Pinot Noir,USA,Oregon,Oregon
@@ -72,14 +72,14 @@ iWine,Type,Vintage,Wine,Producer,MasterVarietal,Country,Region,Appellation
 4815816,Red,2021,Santa Cruz Mountain Vineyard Zinfandel Zayante,Santa Cruz Mountain Vineyard,Zinfandel,USA,California,Santa Cruz Mountains
 3914849,Red,2017,School House Mescolanza Zinfandel Blend,School House,Zinfandel,USA,California,Spring Mountain District
 4657330,Red,2020,Shannon Ridge Vineyard Appellation Series Home Ranch Red Blend,Shannon Ridge Vineyard,Red Blend,USA,California,Lake County
-2340901,White - Sweet/Dessert,2015,Chï¿½teau Suduiraut,Chï¿½teau Suduiraut,Sï¿½millon-Sauvignon Blanc Blend,France,Bordeaux,Sauternes
-2075064,White - Sweet/Dessert,2014,Chï¿½teau Suduiraut,Chï¿½teau Suduiraut,Sï¿½millon-Sauvignon Blanc Blend,France,Bordeaux,Sauternes
+2340901,White - Sweet/Dessert,2015,Château Suduiraut,Château Suduiraut,Sémillon-Sauvignon Blanc Blend,France,Bordeaux,Sauternes
+2075064,White - Sweet/Dessert,2014,Château Suduiraut,Château Suduiraut,Sémillon-Sauvignon Blanc Blend,France,Bordeaux,Sauternes
 5067839,Red,2022,The 8th Art Cabernet Sauvignon,The 8th Art,Cabernet Sauvignon,USA,California,Oakville
 3226868,Red,2017,Philip Togni Cabernet Sauvignon,Philip Togni,Cabernet Sauvignon,USA,California,Spring Mountain District
 4877155,Red,2022,Turley Cabernet Sauvignon Estate,Turley,Cabernet Sauvignon,USA,California,Napa Valley
 4219970,Red - Sweet/Dessert,2014,Turley Zinfandel Delinquent,Turley,Zinfandel,USA,California,Paso Robles
 4828575,Red,2021,Turnbull Cabernet Sauvignon Napa Valley,Turnbull,Cabernet Sauvignon,USA,California,Napa Valley
-4165591,Red,2020,Viï¿½alba Malbec & Touriga Nacional Reserve,Viï¿½alba,Malbec,Argentina,Mendoza,Unknown
+4165591,Red,2020,Viñalba Malbec & Touriga Nacional Reserve,Viñalba,Malbec,Argentina,Mendoza,Unknown
 4488377,Red,2019,Waypoint Zinfandel Bell Road,Waypoint,Zinfandel,USA,California,Amador County
 1570882,Red,2007,Wellington Cabernet Sauvignon Karren Vineyard,Wellington,Cabernet Sauvignon,USA,California,Sonoma Mountain
 1563749,Red,2008,Wellington Zinfandel Estate Vineyard,Wellington,Zinfandel,USA,California,Sonoma Valley
