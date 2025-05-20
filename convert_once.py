@@ -8,13 +8,20 @@ import sys
 import pandas as pd
 
 def convert(input_path, output_path):
-    df = pd.read_csv(input_path, encoding='latin-1')
+    # → Use utf-8-sig for UTF-8 with/without BOM; switch to cp1252 if needed
+    df = pd.read_csv(input_path, encoding='utf-8-sig')
     if 'Type' in df.columns:
         df['Type'] = df['Type'].replace({'Red - Fortified': 'Red - Sweet/Dessert'})
     cols = ['Producer', 'Type', 'Country', 'MasterVarietal',
             'Wine', 'Region', 'Appellation', 'Vintage', 'iWine']
     df_selected = df[[c for c in cols if c in df.columns]]
-    df_selected.to_json(output_path, orient='records', indent=2)
+    # → Preserve real unicode in output
+    df_selected.to_json(
+        output_path,
+        orient='records',
+        indent=2,
+        force_ascii=False
+    )
     print(f"Wrote {len(df_selected)} records to {output_path}")
 
 if __name__ == "__main__":
