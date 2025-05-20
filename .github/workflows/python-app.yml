@@ -40,5 +40,5 @@ jobs:
         with:
           author_name: 'GitHub Actions'
           author_email: 'actions@github.com'
-          message: 'Auto-convert Excel to JSON [skip ci]'
+          message: 'Auto-convert Excel to JSON'
           add: 'wine-data.json'
