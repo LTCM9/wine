@@ -277,8 +277,23 @@
               link.target = '_blank';
               li.appendChild(link);
               li.append(`, ${w.Region}, ${w.Appellation}, ${w.Vintage}`);
+
+              // Add price rating based on Value
+              let priceStr = '';
+              if (w.Value !== undefined && w.Value !== null && w.Value !== '') {
+              let price = parseFloat(w.Value);
+              if (!isNaN(price)) {
+                if (price < 25) priceStr = '<b>$</b>';
+                else if (price < 50) priceStr = '<b>$$</b>';
+                else if (price < 75) priceStr = '<b>$$$</b>';
+                else priceStr = '<b>$$$$</b>';
+                li.insertAdjacentHTML('beforeend', ` &nbsp;${priceStr}`);
+              }
+              }
+
               ul.appendChild(li);
             });
+
             sec.appendChild(ul);
           });
         });
