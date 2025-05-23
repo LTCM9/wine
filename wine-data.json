@@ -8,7 +8,8 @@
     "Region":"Oregon",
     "Appellation":"Oregon",
     "Vintage":2017,
-    "iWine":4740514
+    "iWine":4740514,
+    "Value":12.0
   },
   {
     "Producer":"Shannon Ridge Vineyard",
@@ -19,7 +20,8 @@
     "Region":"California",
     "Appellation":"Lake County",
     "Vintage":2020,
-    "iWine":4657330
+    "iWine":4657330,
+    "Value":12.0
   },
   {
     "Producer":"Our Wines",
@@ -30,7 +32,8 @@
     "Region":"Oregon",
     "Appellation":"Oregon",
     "Vintage":2020,
-    "iWine":4771092
+    "iWine":4771092,
+    "Value":12.0
   },
   {
     "Producer":"Cam X",
@@ -41,7 +44,8 @@
     "Region":"California",
     "Appellation":"Alexander Valley",
     "Vintage":2023,
-    "iWine":5365634
+    "iWine":5365634,
+    "Value":12.0
   },
   {
     "Producer":"Wellington",
@@ -52,18 +56,20 @@
     "Region":"California",
     "Appellation":"Sonoma Valley",
     "Vintage":2007,
-    "iWine":1242165
+    "iWine":1242165,
+    "Value":13.0
   },
   {
-    "Producer":"Château Bélingard",
+    "Producer":"Ch\u00c3\u00a2teau B\u00c3\u00a9lingard",
     "Type":"White - Sweet\/Dessert",
     "Country":"France",
-    "MasterVarietal":"Sémillon-Sauvignon Blanc Blend",
-    "Wine":"Château Bélingard Monbazillac",
+    "MasterVarietal":"S\u00c3\u00a9millon-Sauvignon Blanc Blend",
+    "Wine":"Ch\u00c3\u00a2teau B\u00c3\u00a9lingard Monbazillac",
     "Region":"Southwest France",
     "Appellation":"Monbazillac",
     "Vintage":2019,
-    "iWine":4894960
+    "iWine":4894960,
+    "Value":15.0
   },
   {
     "Producer":"Norris Estate",
@@ -74,29 +80,32 @@
     "Region":"Oregon",
     "Appellation":"Ribbon Ridge",
     "Vintage":2022,
-    "iWine":5158670
+    "iWine":5158670,
+    "Value":15.0
   },
   {
-    "Producer":"Viñalba",
+    "Producer":"Vi\u00c3\u00b1alba",
     "Type":"Red",
     "Country":"Argentina",
     "MasterVarietal":"Malbec",
-    "Wine":"Viñalba Malbec & Touriga Nacional Reserve",
+    "Wine":"Vi\u00c3\u00b1alba Malbec & Touriga Nacional Reserve",
     "Region":"Mendoza",
     "Appellation":"Unknown",
     "Vintage":2020,
-    "iWine":4165591
+    "iWine":4165591,
+    "Value":15.0
   },
   {
-    "Producer":"Château Bastor-Lamontagne",
+    "Producer":"Ch\u00c3\u00a2teau Bastor-Lamontagne",
     "Type":"White - Sweet\/Dessert",
     "Country":"France",
-    "MasterVarietal":"Sémillon-Sauvignon Blanc Blend",
-    "Wine":"Château Bastor-Lamontagne",
+    "MasterVarietal":"S\u00c3\u00a9millon-Sauvignon Blanc Blend",
+    "Wine":"Ch\u00c3\u00a2teau Bastor-Lamontagne",
     "Region":"Bordeaux",
     "Appellation":"Sauternes",
     "Vintage":2022,
-    "iWine":4646885
+    "iWine":4646885,
+    "Value":16.0
   },
   {
     "Producer":"Luna Vineyards",
@@ -107,7 +116,8 @@
     "Region":"California",
     "Appellation":"Napa Valley",
     "Vintage":2019,
-    "iWine":4227860
+    "iWine":4227860,
+    "Value":16.0
   },
   {
     "Producer":"Wellington",
@@ -118,18 +128,20 @@
     "Region":"California",
     "Appellation":"Sonoma Valley",
     "Vintage":2008,
-    "iWine":1563749
+    "iWine":1563749,
+    "Value":16.6
   },
   {
-    "Producer":"Château Miselle",
+    "Producer":"Ch\u00c3\u00a2teau Miselle",
     "Type":"White - Sweet\/Dessert",
     "Country":"France",
-    "MasterVarietal":"Sémillon-Sauvignon Blanc Blend",
-    "Wine":"Château Miselle",
+    "MasterVarietal":"S\u00c3\u00a9millon-Sauvignon Blanc Blend",
+    "Wine":"Ch\u00c3\u00a2teau Miselle",
     "Region":"Bordeaux",
     "Appellation":"Sauternes",
     "Vintage":2019,
-    "iWine":3997479
+    "iWine":3997479,
+    "Value":18.0
   },
   {
     "Producer":"Conn Creek",
@@ -140,7 +152,8 @@
     "Region":"California",
     "Appellation":"Napa Valley",
     "Vintage":2019,
-    "iWine":5055999
+    "iWine":5055999,
+    "Value":19.0
   },
   {
     "Producer":"Benmar",
@@ -151,18 +164,20 @@
     "Region":"Oregon",
     "Appellation":"Yamhill-Carlton",
     "Vintage":2022,
-    "iWine":5208304
+    "iWine":5208304,
+    "Value":20.0
   },
   {
-    "Producer":"Château Doisy-Védrines",
+    "Producer":"Ch\u00c3\u00a2teau Doisy-V\u00c3\u00a9drines",
     "Type":"White - Sweet\/Dessert",
     "Country":"France",
-    "MasterVarietal":"Sémillon-Sauvignon Blanc Blend",
-    "Wine":"Château Doisy-Védrines",
+    "MasterVarietal":"S\u00c3\u00a9millon-Sauvignon Blanc Blend",
+    "Wine":"Ch\u00c3\u00a2teau Doisy-V\u00c3\u00a9drines",
     "Region":"Bordeaux",
     "Appellation":"Sauternes",
     "Vintage":2022,
-    "iWine":4641576
+    "iWine":4641576,
+    "Value":20.0
   },
   {
     "Producer":"Bedrock Wine Co.",
@@ -173,7 +188,8 @@
     "Region":"California",
     "Appellation":"California",
     "Vintage":2023,
-    "iWine":5074141
+    "iWine":5074141,
+    "Value":22.0
   },
   {
     "Producer":"Wellington",
@@ -184,18 +200,20 @@
     "Region":"California",
     "Appellation":"Sonoma Mountain",
     "Vintage":2007,
-    "iWine":1570882
+    "iWine":1570882,
+    "Value":22.5
   },
   {
-    "Producer":"Château Doisy-Daëne",
+    "Producer":"Ch\u00c3\u00a2teau Doisy-Da\u00c3\u00abne",
     "Type":"White - Sweet\/Dessert",
     "Country":"France",
-    "MasterVarietal":"Sémillon-Sauvignon Blanc Blend",
-    "Wine":"Château Doisy-Daëne",
+    "MasterVarietal":"S\u00c3\u00a9millon-Sauvignon Blanc Blend",
+    "Wine":"Ch\u00c3\u00a2teau Doisy-Da\u00c3\u00abne",
     "Region":"Bordeaux",
     "Appellation":"Barsac",
     "Vintage":2022,
-    "iWine":4641573
+    "iWine":4641573,
+    "Value":23.0
   },
   {
     "Producer":"Real Companhia Velha",
@@ -206,7 +224,8 @@
     "Region":"Douro",
     "Appellation":"Porto",
     "Vintage":2018,
-    "iWine":4576504
+    "iWine":4576504,
+    "Value":24.0
   },
   {
     "Producer":"Bedrock Wine Co.",
@@ -217,29 +236,32 @@
     "Region":"California",
     "Appellation":"California",
     "Vintage":2023,
-    "iWine":5166468
+    "iWine":5166468,
+    "Value":24.0
   },
   {
-    "Producer":"Château Nairac",
+    "Producer":"Ch\u00c3\u00a2teau Nairac",
     "Type":"White - Sweet\/Dessert",
     "Country":"France",
-    "MasterVarietal":"Sémillon-Sauvignon Blanc Blend",
-    "Wine":"Château Nairac",
+    "MasterVarietal":"S\u00c3\u00a9millon-Sauvignon Blanc Blend",
+    "Wine":"Ch\u00c3\u00a2teau Nairac",
     "Region":"Bordeaux",
     "Appellation":"Barsac",
     "Vintage":2022,
-    "iWine":4651023
+    "iWine":4651023,
+    "Value":25.0
   },
   {
-    "Producer":"Château Cantegril",
+    "Producer":"Ch\u00c3\u00a2teau Cantegril",
     "Type":"White - Sweet\/Dessert",
     "Country":"France",
-    "MasterVarietal":"Sémillon-Sauvignon Blanc Blend",
-    "Wine":"Château Cantegril Sauternes",
+    "MasterVarietal":"S\u00c3\u00a9millon-Sauvignon Blanc Blend",
+    "Wine":"Ch\u00c3\u00a2teau Cantegril Sauternes",
     "Region":"Bordeaux",
     "Appellation":"Sauternes",
     "Vintage":2019,
-    "iWine":3735494
+    "iWine":3735494,
+    "Value":25.0
   },
   {
     "Producer":"Ridge",
@@ -250,7 +272,8 @@
     "Region":"California",
     "Appellation":"Sonoma County",
     "Vintage":2011,
-    "iWine":1690297
+    "iWine":1690297,
+    "Value":26.0
   },
   {
     "Producer":"Carlisle",
@@ -261,7 +284,8 @@
     "Region":"California",
     "Appellation":"Sonoma County",
     "Vintage":2022,
-    "iWine":5068332
+    "iWine":5068332,
+    "Value":26.0
   },
   {
     "Producer":"Carlisle",
@@ -272,18 +296,20 @@
     "Region":"California",
     "Appellation":"Sonoma County",
     "Vintage":2022,
-    "iWine":5068322
+    "iWine":5068322,
+    "Value":26.0
   },
   {
-    "Producer":"Château Guiraud",
+    "Producer":"Ch\u00c3\u00a2teau Guiraud",
     "Type":"White - Sweet\/Dessert",
     "Country":"France",
-    "MasterVarietal":"Sémillon-Sauvignon Blanc Blend",
-    "Wine":"Château Guiraud",
+    "MasterVarietal":"S\u00c3\u00a9millon-Sauvignon Blanc Blend",
+    "Wine":"Ch\u00c3\u00a2teau Guiraud",
     "Region":"Bordeaux",
     "Appellation":"Sauternes",
     "Vintage":2010,
-    "iWine":1137951
+    "iWine":1137951,
+    "Value":29.0
   },
   {
     "Producer":"Ridge",
@@ -294,40 +320,44 @@
     "Region":"California",
     "Appellation":"Dry Creek Valley",
     "Vintage":2011,
-    "iWine":1571257
+    "iWine":1571257,
+    "Value":29.0
   },
   {
-    "Producer":"Château Suduiraut",
+    "Producer":"Ch\u00c3\u00a2teau Suduiraut",
     "Type":"White - Sweet\/Dessert",
     "Country":"France",
-    "MasterVarietal":"Sémillon-Sauvignon Blanc Blend",
-    "Wine":"Château Suduiraut",
+    "MasterVarietal":"S\u00c3\u00a9millon-Sauvignon Blanc Blend",
+    "Wine":"Ch\u00c3\u00a2teau Suduiraut",
     "Region":"Bordeaux",
     "Appellation":"Sauternes",
     "Vintage":2014,
-    "iWine":2075064
+    "iWine":2075064,
+    "Value":30.0
   },
   {
-    "Producer":"Château Doisy-Védrines",
+    "Producer":"Ch\u00c3\u00a2teau Doisy-V\u00c3\u00a9drines",
     "Type":"White - Sweet\/Dessert",
     "Country":"France",
-    "MasterVarietal":"Sémillon-Sauvignon Blanc Blend",
-    "Wine":"Château Doisy-Védrines",
+    "MasterVarietal":"S\u00c3\u00a9millon-Sauvignon Blanc Blend",
+    "Wine":"Ch\u00c3\u00a2teau Doisy-V\u00c3\u00a9drines",
     "Region":"Bordeaux",
     "Appellation":"Sauternes",
     "Vintage":2019,
-    "iWine":3662523
+    "iWine":3662523,
+    "Value":30.0
   },
   {
-    "Producer":"Château Suduiraut",
+    "Producer":"Ch\u00c3\u00a2teau Suduiraut",
     "Type":"White - Sweet\/Dessert",
     "Country":"France",
-    "MasterVarietal":"Sémillon-Sauvignon Blanc Blend",
-    "Wine":"Château Suduiraut",
+    "MasterVarietal":"S\u00c3\u00a9millon-Sauvignon Blanc Blend",
+    "Wine":"Ch\u00c3\u00a2teau Suduiraut",
     "Region":"Bordeaux",
     "Appellation":"Sauternes",
     "Vintage":2023,
-    "iWine":4997538
+    "iWine":4997538,
+    "Value":31.0
   },
   {
     "Producer":"Ridge",
@@ -338,7 +368,8 @@
     "Region":"California",
     "Appellation":"Dry Creek Valley",
     "Vintage":2010,
-    "iWine":1482420
+    "iWine":1482420,
+    "Value":32.0
   },
   {
     "Producer":"Ridge",
@@ -349,7 +380,8 @@
     "Region":"California",
     "Appellation":"Spring Mountain District",
     "Vintage":2007,
-    "iWine":1165988
+    "iWine":1165988,
+    "Value":32.3333
   },
   {
     "Producer":"Carlisle",
@@ -360,7 +392,8 @@
     "Region":"California",
     "Appellation":"Russian River Valley",
     "Vintage":2022,
-    "iWine":5068344
+    "iWine":5068344,
+    "Value":33.0
   },
   {
     "Producer":"Ridge",
@@ -371,7 +404,8 @@
     "Region":"California",
     "Appellation":"Sonoma County",
     "Vintage":2009,
-    "iWine":1300650
+    "iWine":1300650,
+    "Value":33.0
   },
   {
     "Producer":"Ridge",
@@ -382,7 +416,8 @@
     "Region":"California",
     "Appellation":"Sonoma County",
     "Vintage":2010,
-    "iWine":1438022
+    "iWine":1438022,
+    "Value":33.0
   },
   {
     "Producer":"Santa Cruz Mountain Vineyard",
@@ -393,7 +428,8 @@
     "Region":"California",
     "Appellation":"Central Coast",
     "Vintage":2021,
-    "iWine":5279315
+    "iWine":5279315,
+    "Value":33.0
   },
   {
     "Producer":"Ridge",
@@ -404,7 +440,8 @@
     "Region":"California",
     "Appellation":"Dry Creek Valley",
     "Vintage":2005,
-    "iWine":1051781
+    "iWine":1051781,
+    "Value":33.0
   },
   {
     "Producer":"Ridge",
@@ -415,7 +452,8 @@
     "Region":"California",
     "Appellation":"Dry Creek Valley",
     "Vintage":2010,
-    "iWine":1342826
+    "iWine":1342826,
+    "Value":34.0
   },
   {
     "Producer":"Santa Cruz Mountain Vineyard",
@@ -426,7 +464,8 @@
     "Region":"California",
     "Appellation":"Santa Cruz Mountains",
     "Vintage":2017,
-    "iWine":5213064
+    "iWine":5213064,
+    "Value":35.0
   },
   {
     "Producer":"The 8th Art",
@@ -437,18 +476,20 @@
     "Region":"California",
     "Appellation":"Oakville",
     "Vintage":2022,
-    "iWine":5067839
+    "iWine":5067839,
+    "Value":35.0
   },
   {
-    "Producer":"Château Suduiraut",
+    "Producer":"Ch\u00c3\u00a2teau Suduiraut",
     "Type":"White - Sweet\/Dessert",
     "Country":"France",
-    "MasterVarietal":"Sémillon-Sauvignon Blanc Blend",
-    "Wine":"Château Suduiraut",
+    "MasterVarietal":"S\u00c3\u00a9millon-Sauvignon Blanc Blend",
+    "Wine":"Ch\u00c3\u00a2teau Suduiraut",
     "Region":"Bordeaux",
     "Appellation":"Sauternes",
     "Vintage":2015,
-    "iWine":2340901
+    "iWine":2340901,
+    "Value":35.0
   },
   {
     "Producer":"Santa Cruz Mountain Vineyard",
@@ -459,7 +500,8 @@
     "Region":"California",
     "Appellation":"Santa Cruz Mountains",
     "Vintage":2021,
-    "iWine":4815816
+    "iWine":4815816,
+    "Value":35.0
   },
   {
     "Producer":"Bedrock Wine Co.",
@@ -470,7 +512,8 @@
     "Region":"California",
     "Appellation":"Cienega Valley",
     "Vintage":2023,
-    "iWine":5159434
+    "iWine":5159434,
+    "Value":35.0
   },
   {
     "Producer":"Bedrock Wine Co.",
@@ -481,7 +524,8 @@
     "Region":"California",
     "Appellation":"Lodi Mokelumne River",
     "Vintage":2023,
-    "iWine":5074155
+    "iWine":5074155,
+    "Value":36.0
   },
   {
     "Producer":"Bedrock Wine Co.",
@@ -492,7 +536,8 @@
     "Region":"California",
     "Appellation":"Sonoma County",
     "Vintage":2023,
-    "iWine":5268947
+    "iWine":5268947,
+    "Value":36.0
   },
   {
     "Producer":"Bedrock Wine Co.",
@@ -503,18 +548,20 @@
     "Region":"California",
     "Appellation":"Bennett Valley",
     "Vintage":2023,
-    "iWine":5268946
+    "iWine":5268946,
+    "Value":38.0
   },
   {
-    "Producer":"Château Malartic-Lagravière",
+    "Producer":"Ch\u00c3\u00a2teau Malartic-Lagravi\u00c3\u00a8re",
     "Type":"Red",
     "Country":"France",
     "MasterVarietal":"Red Bordeaux Blend",
-    "Wine":"Château Malartic-Lagravière",
+    "Wine":"Ch\u00c3\u00a2teau Malartic-Lagravi\u00c3\u00a8re",
     "Region":"Bordeaux",
-    "Appellation":"Pessac-Léognan",
+    "Appellation":"Pessac-L\u00c3\u00a9ognan",
     "Vintage":2023,
-    "iWine":4989251
+    "iWine":4989251,
+    "Value":39.0
   },
   {
     "Producer":"Bedrock Wine Co.",
@@ -525,7 +572,8 @@
     "Region":"California",
     "Appellation":"Sonoma Valley",
     "Vintage":2023,
-    "iWine":5022379
+    "iWine":5022379,
+    "Value":39.0
   },
   {
     "Producer":"Ridge",
@@ -536,7 +584,8 @@
     "Region":"California",
     "Appellation":"Dry Creek Valley",
     "Vintage":2011,
-    "iWine":1588534
+    "iWine":1588534,
+    "Value":39.0
   },
   {
     "Producer":"Bedrock Wine Co.",
@@ -547,7 +596,8 @@
     "Region":"California",
     "Appellation":"Contra Costa County",
     "Vintage":2023,
-    "iWine":5167885
+    "iWine":5167885,
+    "Value":39.0
   },
   {
     "Producer":"Bedrock Wine Co.",
@@ -558,7 +608,8 @@
     "Region":"California",
     "Appellation":"Contra Costa County",
     "Vintage":2023,
-    "iWine":5268949
+    "iWine":5268949,
+    "Value":39.0
   },
   {
     "Producer":"Carlisle",
@@ -569,7 +620,8 @@
     "Region":"California",
     "Appellation":"Russian River Valley",
     "Vintage":2022,
-    "iWine":5068319
+    "iWine":5068319,
+    "Value":40.0
   },
   {
     "Producer":"Turley",
@@ -580,7 +632,8 @@
     "Region":"California",
     "Appellation":"Paso Robles",
     "Vintage":2014,
-    "iWine":4219970
+    "iWine":4219970,
+    "Value":40.0
   },
   {
     "Producer":"Ridge",
@@ -591,7 +644,8 @@
     "Region":"California",
     "Appellation":"Dry Creek Valley",
     "Vintage":2008,
-    "iWine":1511913
+    "iWine":1511913,
+    "Value":40.0
   },
   {
     "Producer":"Waypoint",
@@ -602,7 +656,8 @@
     "Region":"California",
     "Appellation":"Amador County",
     "Vintage":2019,
-    "iWine":4488377
+    "iWine":4488377,
+    "Value":43.0
   },
   {
     "Producer":"Ridge",
@@ -613,7 +668,8 @@
     "Region":"California",
     "Appellation":"Alexander Valley",
     "Vintage":2021,
-    "iWine":4567952
+    "iWine":4567952,
+    "Value":43.0
   },
   {
     "Producer":"Bedrock Wine Co.",
@@ -624,7 +680,8 @@
     "Region":"California",
     "Appellation":"Sonoma Valley",
     "Vintage":2023,
-    "iWine":5166523
+    "iWine":5166523,
+    "Value":44.0
   },
   {
     "Producer":"Bedrock Wine Co.",
@@ -635,7 +692,8 @@
     "Region":"California",
     "Appellation":"Contra Costa County",
     "Vintage":2023,
-    "iWine":5074137
+    "iWine":5074137,
+    "Value":45.0
   },
   {
     "Producer":"Santa Cruz Mountain Vineyard",
@@ -646,7 +704,8 @@
     "Region":"California",
     "Appellation":"Santa Cruz Mountains",
     "Vintage":2018,
-    "iWine":4940271
+    "iWine":4940271,
+    "Value":45.0
   },
   {
     "Producer":"Ridge",
@@ -657,7 +716,8 @@
     "Region":"California",
     "Appellation":"Dry Creek Valley",
     "Vintage":2019,
-    "iWine":3912419
+    "iWine":3912419,
+    "Value":45.0
   },
   {
     "Producer":"Croft",
@@ -668,7 +728,8 @@
     "Region":"Douro",
     "Appellation":"Porto",
     "Vintage":2016,
-    "iWine":2999389
+    "iWine":2999389,
+    "Value":45.0
   },
   {
     "Producer":"Carlisle",
@@ -679,7 +740,8 @@
     "Region":"California",
     "Appellation":"Russian River Valley",
     "Vintage":2022,
-    "iWine":5068339
+    "iWine":5068339,
+    "Value":46.0
   },
   {
     "Producer":"Ridge",
@@ -690,7 +752,8 @@
     "Region":"California",
     "Appellation":"Santa Cruz Mountains",
     "Vintage":2010,
-    "iWine":1576987
+    "iWine":1576987,
+    "Value":46.0
   },
   {
     "Producer":"Carlisle",
@@ -701,7 +764,8 @@
     "Region":"California",
     "Appellation":"Russian River Valley",
     "Vintage":2022,
-    "iWine":5068328
+    "iWine":5068328,
+    "Value":46.0
   },
   {
     "Producer":"Bedrock Wine Co.",
@@ -712,7 +776,8 @@
     "Region":"California",
     "Appellation":"Russian River Valley",
     "Vintage":2023,
-    "iWine":5074139
+    "iWine":5074139,
+    "Value":48.0
   },
   {
     "Producer":"Bedrock Wine Co.",
@@ -723,7 +788,8 @@
     "Region":"California",
     "Appellation":"Sonoma Valley",
     "Vintage":2023,
-    "iWine":5074134
+    "iWine":5074134,
+    "Value":48.0
   },
   {
     "Producer":"Bedrock Wine Co.",
@@ -734,7 +800,8 @@
     "Region":"California",
     "Appellation":"Russian River Valley",
     "Vintage":2023,
-    "iWine":5268959
+    "iWine":5268959,
+    "Value":48.0
   },
   {
     "Producer":"Bedrock Wine Co.",
@@ -745,7 +812,8 @@
     "Region":"California",
     "Appellation":"Dry Creek Valley",
     "Vintage":2023,
-    "iWine":5074136
+    "iWine":5074136,
+    "Value":48.0
   },
   {
     "Producer":"Bedrock Wine Co.",
@@ -756,7 +824,8 @@
     "Region":"California",
     "Appellation":"Russian River Valley",
     "Vintage":2023,
-    "iWine":5159914
+    "iWine":5159914,
+    "Value":48.0
   },
   {
     "Producer":"School House",
@@ -767,7 +836,8 @@
     "Region":"California",
     "Appellation":"Spring Mountain District",
     "Vintage":2017,
-    "iWine":3914849
+    "iWine":3914849,
+    "Value":50.0
   },
   {
     "Producer":"Bedrock Wine Co.",
@@ -778,18 +848,20 @@
     "Region":"California",
     "Appellation":"Sonoma Valley",
     "Vintage":2023,
-    "iWine":5166476
+    "iWine":5166476,
+    "Value":52.0
   },
   {
-    "Producer":"Château Talbot",
+    "Producer":"Ch\u00c3\u00a2teau Talbot",
     "Type":"Red",
     "Country":"France",
     "MasterVarietal":"Red Bordeaux Blend",
-    "Wine":"Château Talbot",
+    "Wine":"Ch\u00c3\u00a2teau Talbot",
     "Region":"Bordeaux",
     "Appellation":"St. Julien",
     "Vintage":2023,
-    "iWine":4989414
+    "iWine":4989414,
+    "Value":52.0
   },
   {
     "Producer":"Turley",
@@ -800,7 +872,8 @@
     "Region":"California",
     "Appellation":"Napa Valley",
     "Vintage":2022,
-    "iWine":4877155
+    "iWine":4877155,
+    "Value":55.0
   },
   {
     "Producer":"Bedrock Wine Co.",
@@ -811,7 +884,8 @@
     "Region":"California",
     "Appellation":"Mt. Veeder",
     "Vintage":2023,
-    "iWine":5166478
+    "iWine":5166478,
+    "Value":58.0
   },
   {
     "Producer":"Groth",
@@ -822,7 +896,8 @@
     "Region":"California",
     "Appellation":"Oakville",
     "Vintage":2019,
-    "iWine":4087313
+    "iWine":4087313,
+    "Value":59.0
   },
   {
     "Producer":"Turnbull",
@@ -833,18 +908,20 @@
     "Region":"California",
     "Appellation":"Napa Valley",
     "Vintage":2021,
-    "iWine":4828575
+    "iWine":4828575,
+    "Value":65.0
   },
   {
-    "Producer":"Château Lafaurie-Peyraguey",
+    "Producer":"Ch\u00c3\u00a2teau Lafaurie-Peyraguey",
     "Type":"White - Sweet\/Dessert",
     "Country":"France",
-    "MasterVarietal":"Sémillon-Sauvignon Blanc Blend",
-    "Wine":"Château Lafaurie-Peyraguey",
+    "MasterVarietal":"S\u00c3\u00a9millon-Sauvignon Blanc Blend",
+    "Wine":"Ch\u00c3\u00a2teau Lafaurie-Peyraguey",
     "Region":"Bordeaux",
     "Appellation":"Sauternes",
     "Vintage":2001,
-    "iWine":3037
+    "iWine":3037,
+    "Value":65.0
   },
   {
     "Producer":"Heitz Cellar",
@@ -855,7 +932,8 @@
     "Region":"California",
     "Appellation":"Napa Valley",
     "Vintage":2019,
-    "iWine":4780871
+    "iWine":4780871,
+    "Value":65.0
   },
   {
     "Producer":"Heitz Cellar",
@@ -866,7 +944,8 @@
     "Region":"California",
     "Appellation":"Napa Valley",
     "Vintage":2018,
-    "iWine":3976651
+    "iWine":3976651,
+    "Value":65.0
   },
   {
     "Producer":"Rocca Family Vineyards",
@@ -877,7 +956,8 @@
     "Region":"California",
     "Appellation":"Coombsville",
     "Vintage":2016,
-    "iWine":4053184
+    "iWine":4053184,
+    "Value":69.0
   },
   {
     "Producer":"Rocca Family Vineyards",
@@ -888,18 +968,20 @@
     "Region":"California",
     "Appellation":"Coombsville",
     "Vintage":2014,
-    "iWine":3173098
+    "iWine":3173098,
+    "Value":69.0
   },
   {
-    "Producer":"Domaine L'Abbé Dîne",
+    "Producer":"Domaine L'Abb\u00c3\u00a9 D\u00c3\u00aene",
     "Type":"Red",
     "Country":"France",
     "MasterVarietal":"Red Rhone Blend",
-    "Wine":"Domaine L'Abbé Dîne Châteauneuf-du-Pape",
-    "Region":"Rhône",
-    "Appellation":"Châteauneuf-du-Pape",
+    "Wine":"Domaine L'Abb\u00c3\u00a9 D\u00c3\u00aene Ch\u00c3\u00a2teauneuf-du-Pape",
+    "Region":"Rh\u00c3\u00b4ne",
+    "Appellation":"Ch\u00c3\u00a2teauneuf-du-Pape",
     "Vintage":2022,
-    "iWine":4701582
+    "iWine":4701582,
+    "Value":75.0
   },
   {
     "Producer":"Bedrock Wine Co.",
@@ -910,7 +992,8 @@
     "Region":"California",
     "Appellation":"Moon Mountain District",
     "Vintage":2023,
-    "iWine":5166469
+    "iWine":5166469,
+    "Value":85.0
   },
   {
     "Producer":"Taylor (Fladgate)",
@@ -921,7 +1004,8 @@
     "Region":"Douro",
     "Appellation":"Porto",
     "Vintage":2018,
-    "iWine":3743954
+    "iWine":3743954,
+    "Value":90.0
   },
   {
     "Producer":"Fonseca",
@@ -932,18 +1016,20 @@
     "Region":"Douro",
     "Appellation":"Porto",
     "Vintage":2017,
-    "iWine":3292346
+    "iWine":3292346,
+    "Value":90.0
   },
   {
-    "Producer":"Château Pontet-Canet",
+    "Producer":"Ch\u00c3\u00a2teau Pontet-Canet",
     "Type":"Red",
     "Country":"France",
     "MasterVarietal":"Red Bordeaux Blend",
-    "Wine":"Château Pontet-Canet",
+    "Wine":"Ch\u00c3\u00a2teau Pontet-Canet",
     "Region":"Bordeaux",
     "Appellation":"Pauillac",
     "Vintage":2023,
-    "iWine":4958790
+    "iWine":4958790,
+    "Value":92.0
   },
   {
     "Producer":"Joseph Phelps",
@@ -954,7 +1040,8 @@
     "Region":"California",
     "Appellation":"Oakville",
     "Vintage":1985,
-    "iWine":73356
+    "iWine":73356,
+    "Value":100.0
   },
   {
     "Producer":"Groth",
@@ -965,7 +1052,8 @@
     "Region":"California",
     "Appellation":"Oakville",
     "Vintage":1985,
-    "iWine":18574
+    "iWine":18574,
+    "Value":100.0
   },
   {
     "Producer":"Philip Togni",
@@ -976,18 +1064,20 @@
     "Region":"California",
     "Appellation":"Spring Mountain District",
     "Vintage":2017,
-    "iWine":3226868
+    "iWine":3226868,
+    "Value":100.0
   },
   {
-    "Producer":"Château Lynch-Bages",
+    "Producer":"Ch\u00c3\u00a2teau Lynch-Bages",
     "Type":"Red",
     "Country":"France",
     "MasterVarietal":"Red Bordeaux Blend",
-    "Wine":"Château Lynch-Bages",
+    "Wine":"Ch\u00c3\u00a2teau Lynch-Bages",
     "Region":"Bordeaux",
     "Appellation":"Pauillac",
     "Vintage":1985,
-    "iWine":2956
+    "iWine":2956,
+    "Value":100.0
   },
   {
     "Producer":"Ridge",
@@ -998,7 +1088,8 @@
     "Region":"California",
     "Appellation":"Santa Cruz Mountains",
     "Vintage":1985,
-    "iWine":5916
+    "iWine":5916,
+    "Value":100.0
   },
   {
     "Producer":"Dow",
@@ -1009,7 +1100,8 @@
     "Region":"Douro",
     "Appellation":"Porto",
     "Vintage":2016,
-    "iWine":2999578
+    "iWine":2999578,
+    "Value":109.5
   },
   {
     "Producer":"Santa Cruz Mountain Vineyard",
@@ -1020,7 +1112,8 @@
     "Region":"California",
     "Appellation":"Santa Cruz Mountains",
     "Vintage":2017,
-    "iWine":5279320
+    "iWine":5279320,
+    "Value":125.0
   },
   {
     "Producer":"Santa Cruz Mountain Vineyard",
@@ -1031,7 +1124,8 @@
     "Region":"California",
     "Appellation":"Santa Cruz Mountains",
     "Vintage":2017,
-    "iWine":4694935
+    "iWine":4694935,
+    "Value":125.0
   },
   {
     "Producer":"Conn Creek",
@@ -1042,6 +1136,7 @@
     "Region":"California",
     "Appellation":"Napa Valley",
     "Vintage":2014,
-    "iWine":2592735
+    "iWine":2592735,
+    "Value":179.0
   }
 ]
