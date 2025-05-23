@@ -28,13 +28,14 @@ class ExcelEventHandler(FileSystemEventHandler):
                 return
             self._last_modified = mtime
             print(f"Detected change in '{self.input_path}' at {time.ctime(mtime)}, regenerating JSON...")
-            # Load and map Type
+            # Load and fix iWine BOM column
             df = pd.read_csv(self.input_path, encoding='latin-1')
+            df = df.rename(columns={"ï»¿iWine": "iWine"})
             if 'Type' in df.columns:
                 df['Type'] = df['Type'].replace({'Red - Fortified': 'Red - Sweet/Dessert'})
             else:
                 print("Warning: 'Type' column not found in input file.")
-            # Select desired columns (added 'value')
+            # Use the corrected column list, including 'Value'
             cols = ['Producer', 'Type', 'Country', 'MasterVarietal', 'Wine', 'Region', 'Appellation', 'Vintage', 'iWine', 'Value']
             missing_cols = [col for col in cols if col not in df.columns]
             if missing_cols:
