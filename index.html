@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Wine List</title>
   <style>
+    /* ... all your CSS unchanged ... */
     * { box-sizing: border-box; }
     body {
       margin: 0;
@@ -94,11 +95,9 @@
       border-bottom: 2px solid #777;
       padding-bottom: 0.3rem;
     }
-    /* Style for Red section headers */
     section[id^="type-Red"] h2 {
       color: red;
     }
-    /* Style for White section headers with better contrast */
     section[id^="type-White"] h2 {
       color: #b8860b;
     }
@@ -269,30 +268,38 @@
 
             const ul = document.createElement('ul');
             ul.className = 'wine-list';
-            grouped[type][country][varietal].forEach(w => {
-              const li = document.createElement('li');
-              const link = document.createElement('a');
-              link.href = `https://www.cellartracker.com/wine.asp?iWine=${w.iWine}`;
-              link.textContent = w.Wine;
-              link.target = '_blank';
-              li.appendChild(link);
-              li.append(`, ${w.Region}, ${w.Appellation}, ${w.Vintage}`);
 
-              // Add price rating based on Value
-              let priceStr = '';
-              if (w.Value !== undefined && w.Value !== null && w.Value !== '') {
-              let price = parseFloat(w.Value);
-              if (!isNaN(price)) {
-                if (price < 25) priceStr = '<b>$</b>';
-                else if (price < 50) priceStr = '<b>$$</b>';
-                else if (price < 75) priceStr = '<b>$$$</b>';
-                else priceStr = '<b>$$$$</b>';
-                li.insertAdjacentHTML('beforeend', ` &nbsp;${priceStr}`);
-              }
-              }
+            // SORT: Oldest to Newest
+            grouped[type][country][varietal]
+              .sort((a, b) => {
+                const va = parseInt(a.Vintage) || 0;
+                const vb = parseInt(b.Vintage) || 0;
+                return va - vb; // Ascending: oldest to newest
+              })
+              .forEach(w => {
+                const li = document.createElement('li');
+                const link = document.createElement('a');
+                link.href = `https://www.cellartracker.com/wine.asp?iWine=${w.iWine}`;
+                link.textContent = w.Wine;
+                link.target = '_blank';
+                li.appendChild(link);
+                li.append(`, ${w.Region}, ${w.Appellation}, ${w.Vintage}`);
 
-              ul.appendChild(li);
-            });
+                // Add price rating based on Value
+                let priceStr = '';
+                if (w.Value !== undefined && w.Value !== null && w.Value !== '') {
+                  let price = parseFloat(w.Value);
+                  if (!isNaN(price)) {
+                    if (price < 25) priceStr = '<b>$</b>';
+                    else if (price < 50) priceStr = '<b>$$</b>';
+                    else if (price < 75) priceStr = '<b>$$$</b>';
+                    else priceStr = '<b>$$$$</b>';
+                    li.insertAdjacentHTML('beforeend', ` &nbsp;${priceStr}`);
+                  }
+                }
+
+                ul.appendChild(li);
+              });
 
             sec.appendChild(ul);
           });
