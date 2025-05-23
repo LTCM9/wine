@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -26,122 +25,123 @@
       text-decoration: underline;
     }
 
-```
-/* SIDEBAR (Jump-To Nav + Filters) */
-#sidebar {
-  flex: 0 0 220px;
-  padding: 1rem;
-  background: #f0f4fa;
-  border-right: 1px solid #777;
-  position: sticky;
-  top: 0;
-  align-self: flex-start;
-  height: 100vh;
-  overflow-y: auto;
-}
-#sidebar h2 {
-  margin-top: 0;
-  font-size: 1.2rem;
-  color: #777;
-}
-/* Fancy inputs and selects */
-#sidebar input,
-#sidebar select {
-  width: 100%;
-  margin-bottom: 1rem;
-  padding: 0.6rem 0.8rem;
-  font-size: 0.9rem;
-  color: #333;
-  border: 1px solid #bbb;
-  border-radius: 6px;
-  background: linear-gradient(to bottom, #fff, #ececec);
-  box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);
-  transition: border-color 0.3s, box-shadow 0.3s;
-}
-#sidebar input::placeholder {
-  color: #777;
-}
-#sidebar input:focus,
-#sidebar select:focus {
-  border-color: #000080;
-  outline: none;
-  box-shadow: 0 0 6px rgba(0,0,128,0.4);
-  background: #fff;
-}
-/* Fancy reset button */
-#sidebar button {
-  width: 100%;
-  margin-bottom: 1rem;
-  padding: 0.6rem;
-  font-size: 0.9rem;
-  color: #fff;
-  background: linear-gradient(to bottom, #000080, #3333aa);
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
-  transition: background 0.3s, box-shadow 0.3s;
-}
-#sidebar button:hover {
-  background: linear-gradient(to bottom, #3333aa, #5555cc);
-  box-shadow: 0 5px 8px rgba(0,0,0,0.3);
-}
+    /* SIDEBAR (Jump-To Nav + Filters) */
+    #sidebar {
+      flex: 0 0 220px;
+      padding: 1rem;
+      background: #f0f4fa;
+      border-right: 1px solid #777;
+      position: sticky;
+      top: 0;
+      align-self: flex-start;
+      height: 100vh;
+      overflow-y: auto;
+    }
+    #sidebar h2 {
+      margin-top: 0;
+      font-size: 1.2rem;
+      color: #777;
+    }
+    /* Fancy inputs and selects */
+    #sidebar input,
+    #sidebar select {
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.6rem 0.8rem;
+      font-size: 0.9rem;
+      color: #333;
+      border: 1px solid #bbb;
+      border-radius: 6px;
+      background: linear-gradient(to bottom, #fff, #ececec);
+      box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    #sidebar input::placeholder {
+      color: #777;
+    }
+    #sidebar input:focus,
+    #sidebar select:focus {
+      border-color: #000080;
+      outline: none;
+      box-shadow: 0 0 6px rgba(0,0,128,0.4);
+      background: #fff;
+    }
+    /* Fancy reset button */
+    #sidebar button {
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.6rem;
+      font-size: 0.9rem;
+      color: #fff;
+      background: linear-gradient(to bottom, #000080, #3333aa);
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+      transition: background 0.3s, box-shadow 0.3s;
+    }
+    #sidebar button:hover {
+      background: linear-gradient(to bottom, #3333aa, #5555cc);
+      box-shadow: 0 5px 8px rgba(0,0,0,0.3);
+    }
 
-/* MAIN CONTENT */
-#main {
-  flex: 1;
-  padding: 2rem;
-}
-h1 {
-  margin-top: 0;
-  color: #777;
-  font-size: 2rem;
-}
-h2 {
-  font-size: 1.8rem;
-  margin-top: 2rem;
-  border-bottom: 2px solid #777;
-  padding-bottom: 0.3rem;
-}
-section[id^="type-Red"] h2 {
-  color: red;
-}
-section[id^="type-White"] h2 {
-  color: gold;
-}
-h3 {
-  font-size: 1.4rem;
-  margin-top: 1.5rem;
-  color: #555;
-}
-h4 {
-  font-size: 1.1rem;
-  margin-top: 1rem;
-  color: #777;
-}
-.wine-list {
-  list-style: none;
-  padding-left: 0;
-  margin: 0.5rem 0 1rem 0;
-}
-.wine-list li {
-  margin: 0.2rem 0;
-}
+    /* MAIN CONTENT */
+    #main {
+      flex: 1;
+      padding: 2rem;
+    }
+    h1 {
+      margin-top: 0;
+      color: #777;
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin-top: 2rem;
+      border-bottom: 2px solid #777;
+      padding-bottom: 0.3rem;
+    }
+    section[id^="type-Red"] h2 {
+      color: red;
+    }
+    section[id^="type-White"] h2 {
+      color: #b8860b; /* Darker gold for better contrast */
+    }
+    h3 {
+      font-size: 1.4rem;
+      margin-top: 1.5rem;
+      color: #555;
+    }
+    h4 {
+      font-size: 1.1rem;
+      margin-top: 1rem;
+      color: #777;
+    }
+    .wine-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0.5rem 0 1rem 0;
+    }
+    .wine-list li {
+      margin: 0.2rem 0;
+    }
 
-/* RESPONSIVE: collapse sidebar on narrow */
-@media (max-width: 768px) {
-  body {
-    flex-direction: column;
-  }
-  #sidebar {
-    position: relative;
-    height: auto;
-    border-right: none;
-    border-bottom: 1px solid #777;
-  }
-}
-```
-
+    /* RESPONSIVE: collapse sidebar on narrow */
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+      #sidebar {
+        position: relative;F
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid #777;
+      }
+    }
+    /* Better anchor jump offset for headings */
+    section[id^="type-"] {
+      scroll-margin-top: 2rem;
+    }
   </style>
 </head>
 <body>
@@ -162,145 +162,139 @@ h4 {
     <button id="reset">Reset Filters</button>
   </aside>
   <main id="main">
-    <h1>Wiles Family Wine List</h1>
+    <h1>Wine List</h1>
     <div id="wine-list"></div>
   </main>
   <script>
     let wines = [];
     const uniqSorted = arr => [...new Set(arr)].sort();
 
-```
-// Desired type order
-const typeOrder = [
-  'Red',
-  'Red - Sweet/Dessert',
-  'White',
-  'White - Sweet/Dessert'
-];
-
-fetch('wine-data.json')
-  .then(r => r.json())
-  .then(data => {
-    wines = data;
-    buildFilters();
-    buildNav();
-    renderList();
-    document.getElementById('search').addEventListener('input', renderList);
-    document.getElementById('filter-country').addEventListener('change', renderList);
-    document.getElementById('filter-producer').addEventListener('change', renderList);
-    document.getElementById('filter-varietal').addEventListener('change', renderList);
-    document.getElementById('reset').addEventListener('click', () => {
-      document.getElementById('search').value = '';
-      document.getElementById('filter-country').value = 'All';
-      document.getElementById('filter-producer').value = 'All';
-      document.getElementById('filter-varietal').value = 'All';
-      renderList();
-    });
-  })
-  .catch(console.error);
-
-function buildFilters() {
-  const countries = uniqSorted(wines.map(w => w.Country));
-  const producers = uniqSorted(wines.map(w => w.Producer));
-  const varietals = uniqSorted(wines.map(w => w.MasterVarietal));
-  const cSel = document.getElementById('filter-country');
-  countries.forEach(c => cSel.add(new Option(c, c)));
-  const pSel = document.getElementById('filter-producer');
-  producers.forEach(p => pSel.add(new Option(p, p)));
-  const vSel = document.getElementById('filter-varietal');
-  varietals.forEach(v => vSel.add(new Option(v, v)));
-}
-
-function buildNav() {
-  const nav = document.getElementById('nav-list');
-  // Determine available types
-  const allTypes = uniqSorted(wines.map(w => w.Type));
-  // Build ordered list: first those in typeOrder that exist, then any others
-  const orderedTypes = [
-    ...typeOrder.filter(t => allTypes.includes(t)),
-    ...allTypes.filter(t => !typeOrder.includes(t))
-  ];
-  orderedTypes.forEach(type => {
-    const li = document.createElement('li');
-    const a  = document.createElement('a');
-    a.href = `#type-${type.replace(/\s+/g,'-')}`;
-    a.textContent = type;
-    a.style.color = '#777';
-    li.appendChild(a);
-    nav.appendChild(li);
-  });
-}
-
-function renderList() {
-  const container = document.getElementById('wine-list');
-  container.innerHTML = '';
-  const term = document.getElementById('search').value.toLowerCase();
-  const countryFilter = document.getElementById('filter-country').value;
-  const producerFilter = document.getElementById('filter-producer').value;
-  const varietalFilter = document.getElementById('filter-varietal').value;
-
-  // Filter entries
-  const filtered = wines.filter(w => {
-    const entry = `${w.Wine}, ${w.Region}, ${w.Appellation}, ${w.Vintage}`.toLowerCase();
-    return (!term || entry.includes(term))
-        && (countryFilter === 'All' || w.Country === countryFilter)
-        && (producerFilter === 'All' || w.Producer === producerFilter)
-        && (varietalFilter === 'All' || w.MasterVarietal === varietalFilter);
-  });
-
-  // Group by Type → Country → MasterVarietal
-  const grouped = {};
-  filtered.forEach(w => {
-    grouped[w.Type] = grouped[w.Type] || {};
-    grouped[w.Type][w.Country] = grouped[w.Type][w.Country] || {};
-    grouped[w.Type][w.Country][w.MasterVarietal] = grouped[w.Type][w.Country][w.MasterVarietal] || [];
-    grouped[w.Type][w.Country][w.MasterVarietal].push(w);
-  });
-
-  // Render in custom type order
-  const allTypes = uniqSorted(Object.keys(grouped));
-  const ordered = [
-    ...typeOrder.filter(t => allTypes.includes(t)),
-    ...allTypes.filter(t => !typeOrder.includes(t))
-  ];
-  ordered.forEach(type => {
-    const sec = document.createElement('section');
-    sec.id = `type-${type.replace(/\s+/g,'-')}`;
-    const h2 = document.createElement('h2');
-    h2.textContent = type;
-    sec.appendChild(h2);
-
-    Object.keys(grouped[type]).forEach(country => {
-      const h3 = document.createElement('h3');
-      h3.textContent = country;
-      sec.appendChild(h3);
-
-      Object.keys(grouped[type][country]).forEach(varietal => {
-        const h4 = document.createElement('h4');
-        h4.textContent = varietal;
-        sec.appendChild(h4);
-
-        const ul = document.createElement('ul');
-        ul.className = 'wine-list';
-        grouped[type][country][varietal].forEach(w => {
-          const li = document.createElement('li');
-          const link = document.createElement('a');
-          link.href = `https://www.cellartracker.com/wine.asp?iWine=${w.iWine}`;
-          link.textContent = w.Wine;
-          link.target = '_blank';
-          li.appendChild(link);
-          li.append(`, ${w.Region}, ${w.Appellation}, ${w.Vintage}`);
-          ul.appendChild(li);
+    // Load data
+    fetch('wine-data.json')
+      .then(r => r.json())
+      .then(data => {
+        wines = data;
+        buildFilters();
+        buildNav();
+        renderList();
+        document.getElementById('search').addEventListener('input', renderList);
+        document.getElementById('filter-country').addEventListener('change', renderList);
+        document.getElementById('filter-producer').addEventListener('change', renderList);
+        document.getElementById('filter-varietal').addEventListener('change', renderList);
+        document.getElementById('reset').addEventListener('click', () => {
+          document.getElementById('search').value = '';
+          document.getElementById('filter-country').value = 'All';
+          document.getElementById('filter-producer').value = 'All';
+          document.getElementById('filter-varietal').value = 'All';
+          renderList();
         });
-        sec.appendChild(ul);
+      })
+      .catch(console.error);
+
+    // Build Country, Producer & MasterVarietal dropdowns
+    function buildFilters() {
+      const countries = uniqSorted(wines.map(w => w.Country));
+      const producers = uniqSorted(wines.map(w => w.Producer));
+      const varietals = uniqSorted(wines.map(w => w.MasterVarietal));
+      const cSel = document.getElementById('filter-country');
+      countries.forEach(c => cSel.add(new Option(c, c)));
+      const pSel = document.getElementById('filter-producer');
+      producers.forEach(p => pSel.add(new Option(p, p)));
+      const vSel = document.getElementById('filter-varietal');
+      varietals.forEach(v => vSel.add(new Option(v, v)));
+    }
+
+    // Jump-To navigation for Types (ordered)
+    function buildNav() {
+      const nav = document.getElementById('nav-list');
+      nav.innerHTML = '';
+      const typeOrder = ["Red", "Red Sweet", "White", "White Sweet"];
+      typeOrder.forEach(type => {
+        if (wines.some(w => w.Type === type)) {
+          const li = document.createElement('li');
+          const a  = document.createElement('a');
+          a.href = `#type-${type.replace(/\s+/g,'-')}`;
+          a.textContent = type;
+          a.style.color = '#777';
+          li.appendChild(a);
+          nav.appendChild(li);
+        }
       });
-    });
+    }
 
-    container.appendChild(sec);
-  });
-}
-```
+    // Render grouped list (Type → Country → MasterVarietal), in requested order
+    function renderList() {
+      const container = document.getElementById('wine-list');
+      container.innerHTML = '';
+      const term = document.getElementById('search').value.toLowerCase();
+      const countryFilter = document.getElementById('filter-country').value;
+      const producerFilter = document.getElementById('filter-producer').value;
+      const varietalFilter = document.getElementById('filter-varietal').value;
 
+      // Apply filters
+      const filtered = wines.filter(w => {
+        const entry = `${w.Wine}, ${w.Region}, ${w.Appellation}, ${w.Vintage}`.toLowerCase();
+        return (!term || entry.includes(term))
+            && (countryFilter === 'All' || w.Country === countryFilter)
+            && (producerFilter === 'All' || w.Producer === producerFilter)
+            && (varietalFilter === 'All' || w.MasterVarietal === varietalFilter);
+      });
+
+      // Group by Type → Country → MasterVarietal
+      const grouped = {};
+      filtered.forEach(w => {
+        grouped[w.Type] = grouped[w.Type] || {};
+        grouped[w.Type][w.Country] = grouped[w.Type][w.Country] || {};
+        grouped[w.Type][w.Country][w.MasterVarietal] = grouped[w.Type][w.Country][w.MasterVarietal] || [];
+        grouped[w.Type][w.Country][w.MasterVarietal].push(w);
+      });
+
+      // Custom type order
+      const typeOrder = ["Red", "Red Sweet", "White", "White Sweet"];
+      let foundType = false;
+      typeOrder.forEach(type => {
+        if (!grouped[type]) return;
+        foundType = true;
+        const sec = document.createElement('section');
+        sec.id = `type-${type.replace(/\s+/g,'-')}`;
+        const h2 = document.createElement('h2');
+        h2.textContent = type;
+        sec.appendChild(h2);
+
+        Object.keys(grouped[type]).forEach(country => {
+          const h3 = document.createElement('h3');
+          h3.textContent = country;
+          sec.appendChild(h3);
+
+          Object.keys(grouped[type][country]).forEach(varietal => {
+            const h4 = document.createElement('h4');
+            h4.textContent = varietal;
+            sec.appendChild(h4);
+
+            const ul = document.createElement('ul');
+            ul.className = 'wine-list';
+            grouped[type][country][varietal].forEach(w => {
+              const li = document.createElement('li');
+              const link = document.createElement('a');
+              link.href = `https://www.cellartracker.com/wine.asp?iWine=${w.iWine}`;
+              link.textContent = w.Wine;
+              link.target = '_blank';
+              li.appendChild(link);
+              li.append(`, ${w.Region}, ${w.Appellation}, ${w.Vintage}`);
+              ul.appendChild(li);
+            });
+            sec.appendChild(ul);
+          });
+        });
+
+        container.appendChild(sec);
+      });
+
+      // Show no results message if nothing matches
+      if (!foundType) {
+        container.innerHTML = '<p>No wines found matching your filters.</p>';
+      }
+    }
   </script>
 </body>
 </html>
