@@ -35,7 +35,7 @@ class ExcelEventHandler(FileSystemEventHandler):
             else:
                 print("Warning: 'Type' column not found in input file.")
             # Select desired columns (added 'value')
-            cols = ['Producer', 'Type', 'Country', 'MasterVarietal', 'Wine', 'Region', 'Appellation', 'Vintage', 'iWine', 'value']
+            cols = ['Producer', 'Type', 'Country', 'MasterVarietal', 'Wine', 'Region', 'Appellation', 'Vintage', 'iWine', 'Value']
             missing_cols = [col for col in cols if col not in df.columns]
             if missing_cols:
                 print(f"Warning: Missing columns in input file: {missing_cols}")
