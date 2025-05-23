@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Wine List</title>
+  <title>Wiles Family Wine List</title>
   <style>
-    /* GLOBAL & TYPOGRAPHY */
     * { box-sizing: border-box; }
     body {
       margin: 0;
@@ -24,8 +23,6 @@
     a:hover {
       text-decoration: underline;
     }
-
-    /* SIDEBAR (Jump-To Nav + Filters) */
     #sidebar {
       flex: 0 0 220px;
       padding: 1rem;
@@ -42,7 +39,6 @@
       font-size: 1.2rem;
       color: #777;
     }
-    /* Fancy inputs and selects */
     #sidebar input,
     #sidebar select {
       width: 100%;
@@ -66,7 +62,6 @@
       box-shadow: 0 0 6px rgba(0,0,128,0.4);
       background: #fff;
     }
-    /* Fancy reset button */
     #sidebar button {
       width: 100%;
       margin-bottom: 1rem;
@@ -84,8 +79,6 @@
       background: linear-gradient(to bottom, #3333aa, #5555cc);
       box-shadow: 0 5px 8px rgba(0,0,0,0.3);
     }
-
-    /* MAIN CONTENT */
     #main {
       flex: 1;
       padding: 2rem;
@@ -101,11 +94,13 @@
       border-bottom: 2px solid #777;
       padding-bottom: 0.3rem;
     }
+    /* Style for Red section headers */
     section[id^="type-Red"] h2 {
       color: red;
     }
+    /* Style for White section headers with better contrast */
     section[id^="type-White"] h2 {
-      color: #b8860b; /* Darker gold for better contrast */
+      color: #b8860b;
     }
     h3 {
       font-size: 1.4rem;
@@ -125,20 +120,17 @@
     .wine-list li {
       margin: 0.2rem 0;
     }
-
-    /* RESPONSIVE: collapse sidebar on narrow */
     @media (max-width: 768px) {
       body {
         flex-direction: column;
       }
       #sidebar {
-        position: relative;F
+        position: relative;
         height: auto;
         border-right: none;
         border-bottom: 1px solid #777;
       }
     }
-    /* Better anchor jump offset for headings */
     section[id^="type-"] {
       scroll-margin-top: 2rem;
     }
@@ -162,14 +154,21 @@
     <button id="reset">Reset Filters</button>
   </aside>
   <main id="main">
-    <h1>Wine List</h1>
+    <h1>Wiles Family Wine List</h1>
     <div id="wine-list"></div>
   </main>
   <script>
     let wines = [];
     const uniqSorted = arr => [...new Set(arr)].sort();
 
-    // Load data
+    // Custom order for types, matching JSON file exactly
+    const typeOrder = [
+      "Red",
+      "Red - Sweet/Dessert",
+      "White",
+      "White - Sweet/Dessert"
+    ];
+
     fetch('wine-data.json')
       .then(r => r.json())
       .then(data => {
@@ -204,16 +203,15 @@
       varietals.forEach(v => vSel.add(new Option(v, v)));
     }
 
-    // Jump-To navigation for Types (ordered)
+    // Jump-To navigation for Types in the custom order
     function buildNav() {
       const nav = document.getElementById('nav-list');
       nav.innerHTML = '';
-      const typeOrder = ["Red", "Red Sweet", "White", "White Sweet"];
       typeOrder.forEach(type => {
         if (wines.some(w => w.Type === type)) {
           const li = document.createElement('li');
           const a  = document.createElement('a');
-          a.href = `#type-${type.replace(/\s+/g,'-')}`;
+          a.href = `#type-${type.replace(/\s+/g,'-').replace(/\//g,'-')}`;
           a.textContent = type;
           a.style.color = '#777';
           li.appendChild(a);
@@ -222,7 +220,7 @@
       });
     }
 
-    // Render grouped list (Type → Country → MasterVarietal), in requested order
+    // Render grouped list (Type → Country → MasterVarietal), in custom order
     function renderList() {
       const container = document.getElementById('wine-list');
       container.innerHTML = '';
@@ -249,14 +247,12 @@
         grouped[w.Type][w.Country][w.MasterVarietal].push(w);
       });
 
-      // Custom type order
-      const typeOrder = ["Red", "Red Sweet", "White", "White Sweet"];
       let foundType = false;
       typeOrder.forEach(type => {
         if (!grouped[type]) return;
         foundType = true;
         const sec = document.createElement('section');
-        sec.id = `type-${type.replace(/\s+/g,'-')}`;
+        sec.id = `type-${type.replace(/\s+/g,'-').replace(/\//g,'-')}`;
         const h2 = document.createElement('h2');
         h2.textContent = type;
         sec.appendChild(h2);
