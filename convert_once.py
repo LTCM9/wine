@@ -12,7 +12,7 @@ if __name__ == '__main__':
         sys.exit(1)
 
     try:
-        df = pd.read_csv(input_path, encoding='latin-1')
+        df = pd.read_csv(input_path, encoding='UTF-8')
         df = df.rename(columns={"ï»¿iWine": "iWine"})
         if 'Type' in df.columns:
             df['Type'] = df['Type'].replace({'Red - Fortified': 'Red - Sweet/Dessert'})
