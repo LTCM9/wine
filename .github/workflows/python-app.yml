@@ -4,7 +4,6 @@ on:
   push:
     paths:
       - "My Cellar.csv"
-      - "watch_and_convert.py"
 
 jobs:
   convert:
