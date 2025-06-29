@@ -184,18 +184,6 @@
     "Type":"Red",
     "Country":"USA",
     "MasterVarietal":"Zinfandel",
-    "Wine":"Bedrock Wine Co. Zinfandel Belloni Vineyard",
-    "Region":"California",
-    "Appellation":"Russian River Valley",
-    "Vintage":2023,
-    "iWine":5268959,
-    "Value":48.0
-  },
-  {
-    "Producer":"Bedrock Wine Co.",
-    "Type":"Red",
-    "Country":"USA",
-    "MasterVarietal":"Zinfandel",
     "Wine":"Bedrock Wine Co. Zinfandel Evangelho Vineyard",
     "Region":"California",
     "Appellation":"Contra Costa County",
